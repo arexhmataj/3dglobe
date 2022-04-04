@@ -37,14 +37,14 @@
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.enableDamping = true;
-  controls.enablePan = true;
+  controls.enablePan = false;
   controls.minDistance = 1.2;
   controls.maxDistance = 4;
   controls.autoRotate = true;
   controls.autoRotateSpeed = 0.3;
   // //  controls.enableDamping = true;
   //   controls.campingFactor = 0.25;
-  controls.enableZoom = true;
+  controls.enableZoom = false;
   controls.update();
 
   const scene = new THREE.Scene();
