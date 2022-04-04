@@ -2,7 +2,7 @@
  *
  * @param {url} param
  */
-function FsGlobe() {
+ function FsGlobe() {
   const mainContainer = document.querySelector("[fs-3dglobe-element='container']");
 
   const bgTexture = mainContainer.getAttribute('fs-3dglobe-img');
@@ -26,23 +26,25 @@ function FsGlobe() {
   const marker = [].slice.call(document.querySelectorAll("[fs-3dglobe-element='pin']"));
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
 
-  const fov = 60;
+  const fov = 50;
   const aspect = 2; // the canvas default
   const near = 0.1;
   const far = 10;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.z = 2.5;
+  camera.position.z = 0.7;
+  camera.position.x = 2.8;
+  camera.position.y = 1.1;
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.enableDamping = true;
-  controls.enablePan = false;
+  controls.enablePan = true;
   controls.minDistance = 1.2;
   controls.maxDistance = 4;
   controls.autoRotate = true;
-  controls.autoRotateSpeed = 0.2;
+  controls.autoRotateSpeed = 0.3;
   // //  controls.enableDamping = true;
   //   controls.campingFactor = 0.25;
-  controls.enableZoom = false;
+  controls.enableZoom = true;
   controls.update();
 
   const scene = new THREE.Scene();
