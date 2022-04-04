@@ -68,7 +68,7 @@
     transform: translate(-50%, -50%);
   }
   .fs-3dglobe-info-box {
-    display: none;
+    display: block;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -82,4 +82,10 @@
   .finsweet-globe {
     height: 100%;
     width: 100%;
+  }
+
+
+  /* Location label Canada */
+  body > div:nth-child(2) > div > div.fs-3dglobe-container > div.fs-3dglobe-container > div > div:nth-child(1) > div.fs-3dglobe-info-box {
+    top: -50px;
   }
