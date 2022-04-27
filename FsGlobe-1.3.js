@@ -26,7 +26,7 @@
   const marker = [].slice.call(document.querySelectorAll("[fs-3dglobe-element='pin']"));
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
 
-  const fov = 40;
+  const fov = 35;
   const aspect = 2; // the canvas default
   const near = 0.1;
   const far = 10;
