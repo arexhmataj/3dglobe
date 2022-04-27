@@ -5,13 +5,13 @@
     outline: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
   }
-  .fs-3dglobe-container {
-    position: relative; /* makes this the origin of its children */
+  /* .fs-3dglobe-container {
+    position: relative; 
     width: 100%;
     height: 100%;
     overflow: hidden;
     background-color: ;
-  }
+  } */
   .fs-3dglobe-labels {
     position: absolute; /* let us position ourself inside the container */
     z-index: 0; /* make a new stacking context so children don't sort with rest of page */
